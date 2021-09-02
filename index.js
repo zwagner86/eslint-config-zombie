@@ -3,26 +3,29 @@ module.exports = {
         './rules/babel',
         './rules/best-practices',
         './rules/es6',
+        './rules/node',
         './rules/possible-errors',
+        './rules/react-hooks',
         './rules/react',
         './rules/stylistic-issues',
-        './rules/variables'
+        './rules/variables',
+        './overrides/tests',
     ].map(require.resolve),
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     parserOptions: {
-        ecmaVersion: 7,
+        ecmaVersion: 9,
         sourceType: 'module',
         ecmaFeatures: {
-            jsx: true
-        }
+            jsx: true,
+            legacyDecorators: true,
+        },
     },
     env: {
         browser: true,
         node: true,
         es6: true,
-        jest: true
+        jasmine: true,
+        jest: true,
+        mocha: true,
     },
-    plugins: [
-        'compat'
-    ]
 };
