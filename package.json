@@ -1,19 +1,21 @@
 {
   "name": "eslint-config-zombie",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "My base ESLint configuration.",
   "main": "index.js",
   "repository": "https://github.com/zwagner86/eslint-config-zombie",
   "author": "Zach Wagner",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "7.22.10",
-    "@babel/eslint-parser": "7.22.10",
-    "@babel/eslint-plugin": "7.22.10",
-    "eslint": "8.47.0",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0"
+  "dependencies": {
+    "@babel/eslint-parser": "^7.11.0",
+    "@babel/eslint-plugin": "^7.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.11.0",
+    "eslint": "^8.0.0"
   },
   "engines": {
     "node": ">=16.14.0",

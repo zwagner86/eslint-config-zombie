@@ -1,3 +1,6 @@
+# 3.0.0 - 08/16/2023 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   **BREAKING:** Restructure dependencies
+
 # 2.0.0 - 08/16/2023 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Updated to support Node 16.14.0+ and moved dependencies to devDependencies.
 
