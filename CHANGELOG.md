@@ -1,3 +1,15 @@
+# 4.0.0 - 01/08/2024 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   **BREAKING:** Updated to support ESLint v9
+-   **BREAKING:** Updated minimum Node.js version to 18.18.0+
+-   Updated parser options to use `ecmaVersion: 'latest'` instead of fixed version
+-   Removed deprecated `legacyDecorators` option
+-   Disabled `react/react-in-jsx-scope` rule for modern React compatibility
+-   Updated dependencies:
+    -   `@babel/eslint-parser` to ^7.23.3
+    -   `@babel/eslint-plugin` to ^7.23.3
+    -   `@babel/core` to ^7.23.7
+    -   `eslint-plugin-react` to ^7.33.2
+
 # 3.0.0 - 08/16/2023 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Restructure dependencies
 
