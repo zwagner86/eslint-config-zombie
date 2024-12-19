@@ -1,3 +1,9 @@
+# 4.0.1 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   **BREAKING:** Migrated to ESLint v9's flat config format
+-   **BREAKING:** Converted all configuration files to use ES modules
+-   **BREAKING:** Removed CommonJS module.exports in favor of ES module exports
+-   **BREAKING:** Changed main entry point from `index.js` to `eslint.config.js`
+
 # 4.0.0 - 12/18/2024 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Updated to support ESLint v9
 -   **BREAKING:** Updated minimum Node.js version to 18.18.0+

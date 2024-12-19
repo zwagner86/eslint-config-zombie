@@ -1,10 +1,5 @@
-module.exports = {
+export default {
     plugins: ['node'],
-    settings: {
-        node: {
-            tryExtensions: ['.js', '.jsx', '.json', '.node'],
-        },
-    },
     rules: {
         // possible errors
         'node/handle-callback-err': 0,

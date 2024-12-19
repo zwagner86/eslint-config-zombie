@@ -1,7 +1,8 @@
 {
   "name": "eslint-config-zombie",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "My base ESLint configuration.",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/zwagner86/eslint-config-zombie",
   "author": "Zach Wagner",

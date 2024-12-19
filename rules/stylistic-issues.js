@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     rules: {
         'array-bracket-newline': 0,
         'array-bracket-spacing': [2, 'never'],

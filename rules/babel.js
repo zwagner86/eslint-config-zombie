@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     plugins: ['@babel'],
     rules: {
         'babel/object-curly-spacing': 2,
