@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zombie",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "My base ESLint configuration.",
   "main": "index.js",
   "repository": "https://github.com/zwagner86/eslint-config-zombie",
@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.25.9",
     "@babel/eslint-plugin": "^7.25.9",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^17.15.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0"
   },

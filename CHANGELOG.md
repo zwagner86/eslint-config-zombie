@@ -1,3 +1,7 @@
+# 4.0.6 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   Replace `eslint-plugin-node` with `eslint-plugin-n` for better ESLint v9 compatibility
+-   Update node rule names from `node/*` to `n/*`
+
 # 4.0.5 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   Change how base and test configs are exported
 

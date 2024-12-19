@@ -1,6 +1,6 @@
 const babelParser = require('@babel/eslint-parser');
 const babelPlugin = require('@babel/eslint-plugin');
-const nodePlugin = require('eslint-plugin-node');
+const nodePlugin = require('eslint-plugin-n');
 const reactPlugin = require('eslint-plugin-react');
 const reactHooksPlugin = require('eslint-plugin-react-hooks');
 
@@ -37,7 +37,7 @@ module.exports = {
     },
     plugins: {
         '@babel': babelPlugin,
-        node: nodePlugin,
+        n: nodePlugin,
         react: reactPlugin,
         'react-hooks': reactHooksPlugin,
     },
