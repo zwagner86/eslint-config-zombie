@@ -13,11 +13,10 @@ module.exports = {
     ].map(require.resolve),
     parser: '@babel/eslint-parser',
     parserOptions: {
-        ecmaVersion: 9,
+        ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
-            legacyDecorators: true,
         },
     },
     env: {
