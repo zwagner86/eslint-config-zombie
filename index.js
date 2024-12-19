@@ -15,8 +15,8 @@ const stylisticIssues = require('./rules/stylistic-issues');
 const variables = require('./rules/variables');
 const tests = require('./overrides/tests');
 
-module.exports = {
-    // Global configuration
+// Base configuration
+const baseConfig = {
     languageOptions: {
         parser: babelParser,
         parserOptions: {
@@ -42,7 +42,6 @@ module.exports = {
         react: reactPlugin,
         'react-hooks': reactHooksPlugin,
     },
-    // Merge all rule configurations
     rules: {
         ...babel.rules,
         ...bestPractices.rules,
@@ -56,13 +55,7 @@ module.exports = {
     },
     settings: {
         ...react.settings,
-        ...node.settings,
     },
-    // Include test overrides
-    overrides: [
-        {
-            files: ['**/*.spec.js', '**/*.test.js'],
-            rules: tests.overrides[0].rules,
-        },
-    ],
 };
+
+module.exports = { baseConfig, testConfig: tests };

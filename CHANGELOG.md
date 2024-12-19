@@ -1,3 +1,6 @@
+# 4.0.4 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   Simplify test config to be independent of base config
+
 # 4.0.3 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   Fix test overrides for ESLint v9
 
