@@ -1,4 +1,4 @@
-# 4.0.0 - 11/22/2024 - [Zach Wagner](mailto:zwagner86@gmail.com)
+# 4.0.0 - 12/18/2024 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Updated to support ESLint v9
 -   **BREAKING:** Updated minimum Node.js version to 18.18.0+
 -   Updated parser options to use `ecmaVersion: 'latest'` instead of fixed version
