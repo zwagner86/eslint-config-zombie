@@ -13,10 +13,9 @@ const reactHooks = require('./rules/react-hooks');
 const react = require('./rules/react');
 const stylisticIssues = require('./rules/stylistic-issues');
 const variables = require('./rules/variables');
-const tests = require('./overrides/tests');
 
 // Base configuration
-const baseConfig = {
+module.exports = {
     languageOptions: {
         parser: babelParser,
         parserOptions: {
@@ -57,5 +56,3 @@ const baseConfig = {
         ...react.settings,
     },
 };
-
-module.exports = { baseConfig, testConfig: tests };

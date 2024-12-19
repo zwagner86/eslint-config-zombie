@@ -1,3 +1,6 @@
+# 4.0.5 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   Change how base and test configs are exported
+
 # 4.0.4 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   Simplify test config to be independent of base config
 

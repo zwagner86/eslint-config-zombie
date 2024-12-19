@@ -13,7 +13,8 @@ npm install --save-dev eslint-config-zombie
 Starting with ESLint v9, you'll need to use the new flat config format. Create an `eslint.config.js` file in your project's root:
 
 ```javascript
-const { baseConfig, testConfig } = require('eslint-config-zombie');
+const baseConfig = require('eslint-config-zombie');
+const testConfig = require('eslint-config-zombie/test-file-config');
 
 module.exports = [
     baseConfig,                // Base configuration for all JavaScript files
@@ -24,15 +25,15 @@ module.exports = [
 
 ### Configuration Details
 
-The package exports two configurations:
+The package provides two configurations:
 
-1. `baseConfig`: The main configuration that includes:
+1. Main configuration (from `eslint-config-zombie`):
    - Parser: `@babel/eslint-parser`
    - React and React Hooks support
    - Node.js environment settings
    - Best practices, ES6, and stylistic rules
 
-2. `testConfig`: A simple configuration for test files that:
+2. Test configuration (from `eslint-config-zombie/test-file-config`):
    - Applies to `*.spec.js` and `*.test.js` files
    - Disables certain rules that are commonly problematic in test files
    - Works independently of the base configuration
@@ -42,7 +43,8 @@ The package exports two configurations:
 You can extend or override the configurations:
 
 ```javascript
-const { baseConfig, testConfig } = require('eslint-config-zombie');
+const baseConfig = require('eslint-config-zombie');
+const testConfig = require('eslint-config-zombie/test-file-config');
 
 module.exports = [
     baseConfig,
