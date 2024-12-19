@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     rules: {
         'arrow-body-style': 0,
         'arrow-parens': [2, 'as-needed'],

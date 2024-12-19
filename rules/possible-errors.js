@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     rules: {
         'for-direction': 2,
         'getter-return': 2,

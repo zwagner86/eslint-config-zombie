@@ -1,13 +1,7 @@
-export default {
+module.exports = {
     settings: {
         react: {
             version: 'detect',
-        },
-    },
-    plugins: ['react'],
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
         },
     },
     rules: {

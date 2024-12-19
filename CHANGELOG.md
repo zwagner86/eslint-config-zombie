@@ -1,3 +1,6 @@
+# 4.0.2 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   Use CommonJS module.exports
+
 # 4.0.1 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Migrated to ESLint v9's flat config format
 -   **BREAKING:** Converted all configuration files to use ES modules

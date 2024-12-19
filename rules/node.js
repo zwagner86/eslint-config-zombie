@@ -1,5 +1,4 @@
-export default {
-    plugins: ['node'],
+module.exports = {
     rules: {
         // possible errors
         'node/handle-callback-err': 0,
