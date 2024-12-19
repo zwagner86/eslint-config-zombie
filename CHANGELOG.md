@@ -1,3 +1,6 @@
+# 4.0.3 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
+-   Fix test overrides for ESLint v9
+
 # 4.0.2 - 2024-12-19 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   Use CommonJS module.exports
 

@@ -15,54 +15,54 @@ const stylisticIssues = require('./rules/stylistic-issues');
 const variables = require('./rules/variables');
 const tests = require('./overrides/tests');
 
-module.exports = [
-    {
-        // Global configuration
-        languageOptions: {
-            parser: babelParser,
-            parserOptions: {
-                ecmaVersion: 'latest',
-                sourceType: 'module',
-                ecmaFeatures: {
-                    jsx: true,
-                },
-            },
-            globals: {
-                // Environments
-                browser: true,
-                node: true,
-                es6: true,
-                jasmine: true,
-                jest: true,
-                mocha: true,
+module.exports = {
+    // Global configuration
+    languageOptions: {
+        parser: babelParser,
+        parserOptions: {
+            ecmaVersion: 'latest',
+            sourceType: 'module',
+            ecmaFeatures: {
+                jsx: true,
             },
         },
-        plugins: {
-            '@babel': babelPlugin,
-            node: nodePlugin,
-            react: reactPlugin,
-            'react-hooks': reactHooksPlugin,
-        },
-        // Merge all rule configurations
-        rules: {
-            ...babel.rules,
-            ...bestPractices.rules,
-            ...es6.rules,
-            ...node.rules,
-            ...possibleErrors.rules,
-            ...reactHooks.rules,
-            ...react.rules,
-            ...stylisticIssues.rules,
-            ...variables.rules,
-        },
-        settings: {
-            ...react.settings,
-            ...node.settings,
+        globals: {
+            // Environments
+            browser: true,
+            node: true,
+            es6: true,
+            jasmine: true,
+            jest: true,
+            mocha: true,
         },
     },
-    // Test overrides configuration
-    {
-        files: ['**/*.spec.js', '**/*.test.js'],
-        rules: tests.overrides[0].rules,
+    plugins: {
+        '@babel': babelPlugin,
+        node: nodePlugin,
+        react: reactPlugin,
+        'react-hooks': reactHooksPlugin,
     },
-];
+    // Merge all rule configurations
+    rules: {
+        ...babel.rules,
+        ...bestPractices.rules,
+        ...es6.rules,
+        ...node.rules,
+        ...possibleErrors.rules,
+        ...reactHooks.rules,
+        ...react.rules,
+        ...stylisticIssues.rules,
+        ...variables.rules,
+    },
+    settings: {
+        ...react.settings,
+        ...node.settings,
+    },
+    // Include test overrides
+    overrides: [
+        {
+            files: ['**/*.spec.js', '**/*.test.js'],
+            rules: tests.overrides[0].rules,
+        },
+    ],
+};
