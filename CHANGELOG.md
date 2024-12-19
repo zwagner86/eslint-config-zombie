@@ -5,10 +5,11 @@
 -   Removed deprecated `legacyDecorators` option
 -   Disabled `react/react-in-jsx-scope` rule for modern React compatibility
 -   Updated dependencies:
-    -   `@babel/eslint-parser` to ^7.23.3
-    -   `@babel/eslint-plugin` to ^7.23.3
-    -   `@babel/core` to ^7.23.7
-    -   `eslint-plugin-react` to ^7.33.2
+    -   `@babel/eslint-parser` to ^7.25.9
+    -   `@babel/eslint-plugin` to ^7.25.9
+    -   `@babel/core` to ^7.26.0
+    -   `eslint-plugin-react` to ^7.37.2
+    -   `eslint-plugin-react-hooks` to ^5.1.0
 
 # 3.0.0 - 08/16/2023 - [Zach Wagner](mailto:zwagner86@gmail.com)
 -   **BREAKING:** Restructure dependencies
